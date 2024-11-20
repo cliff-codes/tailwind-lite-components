@@ -1,0 +1,35 @@
+{
+    "name": "tailwind-lite-components",
+    "version": "1.0.0",
+    "description": "",
+    "main": "index.js",
+    "type": "module",
+    "scripts": {
+        "dev:css": "npx tailwindcss -i ./src/styles/styles.css -o ./dist/tailwind.css --watch",
+        "build": "npm run build:css && npm run build:js",
+        "build:css": "postcss src/styles/styles.css -o dist/tailwind.css",
+        "build:js": "rollup -c",
+        "dev:server": "live-server",
+        "dev": "npm run dev:css"
+    },
+    "keywords": [
+        "tailwind-lite-components",
+        "lite-components",
+        "html reusable components",
+        "tailwind-utility-components"
+    ],
+    "author": "cliffordcodes",
+    "license": "ISC",
+    "devDependencies": {
+        "autoprefixer": "^10.4.20",
+        "postcss": "^8.4.49",
+        "prettier": "^3.3.3",
+        "rollup": "^4.27.3",
+        "rollup-plugin-commonjs": "^10.1.0",
+        "rollup-plugin-node-resolve": "^5.2.0",
+        "tailwindcss": "^3.4.15"
+    },
+    "dependencies": {
+        "postcss-cli": "^11.0.0"
+    }
+}

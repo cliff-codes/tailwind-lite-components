@@ -1,0 +1,38 @@
+<!doctype html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1" />
+        <title>Sharp Components</title>
+        <link href="./dist/tailwind.css" rel="stylesheet" />
+        <script src="./src/index.js" type="module" defer></script>
+    </head>
+    <body>
+        <h1 class="font-bold text-blue-400 bg-slate-200 py-4 text-center">
+            Sharp Components(you can test all your components here)
+        </h1>
+        <div class="mt-8 mx-4">
+            <h1 class="font-bold text-lg">Variants</h1>
+            <div>
+                <lite-button label="#Button" variant="default" class="" type="button" size="lg">#primary</lite-button>
+                
+                <lite-button label="#Button" variant="outline" class="" type="button" size="lg">#outline</lite-button>
+                
+                <lite-button label="#Button" variant="ghost" class="" type="button" size="lg">#ghost</lite-button>
+                
+                <lite-button label="#Button" variant="destructive" class="" type="button" size="lg">#destructive</lite-button>
+            </div>
+
+            <h1 class="font-bold text-lg mt-8">Sizes</h1>
+            <div>
+                <lite-button variant="default" class="bg-cyan-500" type="button" size="xl">#extra large</lite-button>
+                
+                <lite-button label="#Button" variant="outline" class="" type="button" size="lg">#large</lite-button>
+                
+                <lite-button label="#Button" variant="ghost" class="" type="button" size="md">#medium</lite-button>
+                
+                <lite-button label="#Button" variant="destructive" class="" type="button" size="sm">#small</lite-button>
+            </div>
+        </div>
+    </body>
+</html>
